@@ -1,16 +1,17 @@
 import java.util.Scanner;
 
-
+//refactoring: improving structure incrementally without modifying behaviour; only structure !! no behaviour!!
+//refactoring.com this dude is good
+//regression: undesirable side effects of modifications --> fancy way of saying you messed up --> so should keep testing to ensure
+// automated CLI test
 public class Contacts0 {
+
+    public static final int MAX_RECORDS = 100;
 
     public static void main(String[] args) {
         final Scanner SCANNER = new Scanner(System.in);
-        System.out.println("|| ===================================================");
-        System.out.println("|| ===================================================");
-        System.out.println("|| Contacts - Version 0.0");
-        System.out.println("|| Welcome to Contacts!");
-        System.out.println("|| ===================================================");
-        String[][] list = new String[100][3];
+        showWelcomeScreen();
+        String[][] list = new String[MAX_RECORDS][3];
         int count = 0;
         while (true) {
             System.out.print("|| " + "Enter command: ");
@@ -58,7 +59,7 @@ public class Contacts0 {
                     }
                     person1[2] = result1;
                     decodeResult = !person1[0].isEmpty()
-                            && !person1[1].isEmpty()
+                            && !person1[1].isEmpty() //hp num validation: phone number not blank, took long cos not oop
                             && !person1[2].isEmpty() && person1[2].contains("@") ? person1 : null;
                 }
                 if (decodeResult == null) {
@@ -92,7 +93,7 @@ public class Contacts0 {
                 feedback = String.format("%1$d persons found!", count);
                 break;
             case "clear":
-                list = new String[100][3];
+                list = new String[MAX_RECORDS][3];
                 count = 0;
                 feedback = "Contacts have been cleared!";
                 break;
@@ -144,6 +145,14 @@ public class Contacts0 {
                 System.out.println("|| " + m);
             }
         }
+    }
+
+    private static void showWelcomeScreen() {
+        System.out.println("|| ===================================================");
+        System.out.println("|| ===================================================");
+        System.out.println("|| Contacts - Version 0.0");
+        System.out.println("|| Welcome to Contacts!");
+        System.out.println("|| ===================================================");
     }
 
 }
