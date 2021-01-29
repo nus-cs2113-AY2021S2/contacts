@@ -8,7 +8,7 @@ public class Contacts0 {
         System.out.println("|| ===================================================");
         System.out.println("|| ===================================================");
         System.out.println("|| Contacts - Version 0.0");
-        System.out.println("|| Welcome to Contacts!");
+        System.out.println("|| Hello there! Welcome to Contacts!");
         System.out.println("|| ===================================================");
         String[][] list = new String[100][3];
         int count = 0;
