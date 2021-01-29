@@ -208,7 +208,7 @@ public class Contacts1 {
             return executeClearAddressBook();
         case COMMAND_HELP_WORD:
             return getUsageInfoForAllCommands();
-        case COMMAND_EXIT_WORD:
+        case COMMAND_EXIT_WORD://lol
             executeExitProgramRequest();
             // Fallthrough
         default:
