@@ -1,6 +1,6 @@
 || ===================================================
 || ===================================================
-|| Contacts - Version 0.0
+|| Contacts - Version 0.1
 || Welcome to Contacts!
 || ===================================================
 || Enter command: || [Command entered:help]
@@ -82,7 +82,7 @@
 || add: Adds a person to contacts.
 || 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
 || 	Example: add John Doe p/98765432 e/johnd@gmail.com
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:add Daryl p/invalid e/daryl@example.com]
 || New person added: Daryl, Phone: invalid, Email: daryl@example.com
