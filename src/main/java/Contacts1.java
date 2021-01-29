@@ -578,7 +578,7 @@ public class Contacts1 {
     }
 
     /**
-     * Returns true if the given string as a legal person name
+* Returns true if the given string as a legal person name
      *
      * @param name to be validated
      */
