@@ -135,6 +135,7 @@ public class Contacts1 {
     public static void main(String[] args) {
         initAddressBook();
         showWelcomeMessage();
+        System.out.print("hello");
         while (true) {
             String userCommand = getUserInput();
             echoUserCommand(userCommand);
