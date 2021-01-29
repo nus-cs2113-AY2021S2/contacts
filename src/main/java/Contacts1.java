@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
  * This class is used to maintain a list of person data which are saved
- * in a text file.
+ * in a text file.z
  **/
 public class Contacts1 {
 
