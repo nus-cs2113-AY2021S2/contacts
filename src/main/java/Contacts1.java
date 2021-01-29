@@ -6,8 +6,6 @@ import java.util.Scanner;
  * in a text file.
  **/
 public class Contacts1 {
-
-
     /**
      * Version info of the program.
      */
