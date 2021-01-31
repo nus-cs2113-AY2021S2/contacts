@@ -11,7 +11,7 @@ public class Contacts0 {
         String[][] list = new String[MAX_RECORD][3];
         int count = 0;
         while (true) {
-            System.out.print("|| " + "Enter command: ");
+            System.out.print("|| " + "Enter Command: ");
             String inputLine = SCANNER.nextLine();
             while (inputLine.trim().isEmpty() || inputLine.trim().charAt(0) == '#') {
                 inputLine = SCANNER.nextLine();
